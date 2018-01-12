@@ -6,6 +6,8 @@
 //  Copyright © 2018 Karunakar Bandikatla. All rights reserved.
 //
 
+//Relations
+
 import UIKit
 import RealmSwift   
 
