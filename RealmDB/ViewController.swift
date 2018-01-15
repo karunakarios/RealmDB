@@ -50,8 +50,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "employee")
-        let empName = employees[indexPath.row].name
-        cell?.textLabel?.text = empName
+        let emp: Employee = employees[indexPath.row]
+        cell?.textLabel?.text = "\(emp.id). \(emp.name) (\(emp.empID))"
         return cell!
     }
     

@@ -10,8 +10,19 @@ import RealmSwift
 
 class Employee: Object {
     
-    @objc dynamic var id: String = ""
+    @objc dynamic var id: Int = 0
+    @objc dynamic var empID: String = ""
     @objc dynamic var name: String = ""
     @objc dynamic var isManager: Bool = false
+    
+    override static func primaryKey() -> String? {
+         return "id"
+    }
+    
+    class func incrementID() -> Int {
+        let realm = try! Realm()
+        let id =  (realm.objects(Employee.self).max(ofProperty: "id") as Int? ?? 0) + 1
+        return id
+    }
     
 }

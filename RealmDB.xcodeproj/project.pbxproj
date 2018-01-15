@@ -13,7 +13,6 @@
 		079AE74C2007746200105BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079AE74B2007746200105BE7 /* Assets.xcassets */; };
 		079AE74F2007746200105BE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079AE74D2007746200105BE7 /* LaunchScreen.storyboard */; };
 		07EC652C200781BB00A99D22 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EC652B200781BB00A99D22 /* Employee.swift */; };
-		07EC652F2007823600A99D22 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EC652E2007823600A99D22 /* Manager.swift */; };
 		07EC653120078C7E00A99D22 /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EC653020078C7E00A99D22 /* AddEmployeeViewController.swift */; };
 		30C9877C37D62D5AB3880AC2 /* Pods_RealmDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0ACAB14577A29FE44CBDEB /* Pods_RealmDB.framework */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		079AE74E2007746200105BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		079AE7502007746200105BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07EC652B200781BB00A99D22 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
-		07EC652E2007823600A99D22 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		07EC653020078C7E00A99D22 /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
 		4F1BE3321B430E2D9C333455 /* Pods-RealmDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmDB/Pods-RealmDB.release.xcconfig"; sourceTree = "<group>"; };
 		9D0ACAB14577A29FE44CBDEB /* Pods_RealmDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				07EC652B200781BB00A99D22 /* Employee.swift */,
-				07EC652E2007823600A99D22 /* Manager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,7 +236,6 @@
 				079AE7472007746200105BE7 /* ViewController.swift in Sources */,
 				07EC652C200781BB00A99D22 /* Employee.swift in Sources */,
 				079AE7452007746200105BE7 /* AppDelegate.swift in Sources */,
-				07EC652F2007823600A99D22 /* Manager.swift in Sources */,
 				07EC653120078C7E00A99D22 /* AddEmployeeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

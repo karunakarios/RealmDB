@@ -18,6 +18,7 @@ class AddEmployeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tfID.keyboardType = .numberPad
         setData()
     }
     
@@ -29,7 +30,7 @@ class AddEmployeeViewController: UIViewController {
         self.title = "Add Employee"
         if let emp = employee {
             self.title = emp.name
-            self.tfID.text = emp.id
+            self.tfID.text = emp.empID
             self.tfName.text = emp.name
             self.switchManager.setOn(emp.isManager, animated: false)
         }
@@ -43,7 +44,7 @@ class AddEmployeeViewController: UIViewController {
         if isEditScreen() {
             try! uiRealm.write {   //Ream EDIT
                 if let emp  = employee {
-                    emp.id = empID!
+                    emp.empID = empID!
                     emp.name = empName!
                     emp.isManager = isManager
                 }
@@ -53,9 +54,10 @@ class AddEmployeeViewController: UIViewController {
         
         else {
             let emp = Employee()
-            emp.id = empID!
+            emp.empID = empID!
             emp.name = empName!
             emp.isManager = isManager
+            emp.id = Employee.incrementID()
             
             try! uiRealm.write {   //Ream ADD
                 uiRealm.add(emp)
